@@ -15,6 +15,8 @@ body {
 /* --Header styles-- */
 
 .header {
+  text-align: left;
+  height: 80px;
   background-color: #fff;
 }
 
@@ -36,11 +38,19 @@ body {
 
 .nav-menu-list {
   list-style-type: none;
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0;
 }
+
 .nav-menu-link {
   float: left;
-  padding-left: 50px;
+  margin-right: 50px;
 }
+.nav-menu-link:last-child {
+  margin-right: 0;
+}
+
 .nav-menu-link > a {
   display: block;
   font-style: normal;
@@ -90,9 +100,12 @@ body {
 /* Hero section */
 
 .section-hero {
-  background-color: #2f303a;
   text-align: center;
-  height: 600px;
+  height: 200px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  background-color: #2f303a;
 }
 
 .section-hero > h1 {
@@ -106,9 +119,13 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding-top: 200px;
+  margin: 0;
 
   color: #fff;
+}
+.part-one::after {
+  content: "\a";
+  white-space: pre;
 }
 
 .section-hero > button {
@@ -119,6 +136,7 @@ body {
   text-align: center;
   width: 216px;
   height: 50px;
+  margin-top: 30px;
 
   font-style: normal;
   font-weight: 700;
@@ -137,7 +155,10 @@ body {
 /* "Наші переваги" section */
 
 .section-features {
-  padding-top: 94px;
+  margin-top: 94px;
+  height: 98px;
+  text-align: center;
+
   background-color: #fff;
 }
 
@@ -147,6 +168,10 @@ body {
 
 .features-list {
   list-style-type: none;
+  display: inline-block;
+  text-align: left;
+  padding: 0;
+  margin: 0;
 }
 
 .features-item {
@@ -155,7 +180,7 @@ body {
   width: 270px;
 }
 .features-item:last-child {
-  padding-right: 30px;
+  padding-right: 0;
 }
 
 .features-item > h3 {
@@ -180,3 +205,157 @@ body {
 }
 
 /* "Чим ми займаємося" section */
+
+.section-about {
+  margin-top: 94px;
+  height: 386px;
+  text-align: center;
+
+  background-color: #fff;
+}
+
+.section-about > h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.about-list {
+  list-style-type: none;
+  display: inline-block;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.about-item {
+  float: left;
+  margin-right: 30px;
+}
+.about-item:last-child {
+  margin-right: -30px;
+}
+
+.about-item > img {
+  height: 294px;
+  width: 370px;
+}
+
+/* "Наша команда" section */
+
+.section-team {
+  margin-top: 94px;
+  height: 648px;
+  text-align: center;
+
+  background-color: #f5f4fa;
+}
+
+.section-team > h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
+
+.team-list {
+  list-style-type: none;
+  display: inline-block;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.team-card {
+  float: left;
+  margin-right: 30px;
+  text-align: center;
+  width: 270px;
+  height: 368px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  background-color: #fff;
+}
+
+.team-card:last-child {
+  margin-right: 0;
+}
+
+.team-card > h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-card > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
+}
+
+/* --Footer styles-- */
+
+.footer {
+  padding-top: 60px;
+  height: 172px;
+
+  color: #fff;
+  background-color: #2f303a;
+}
+
+.footer > .brand-logo {
+  color: inherit;
+}
+
+.address {
+  margin-top: 20px;
+}
+
+.address-list {
+  list-style-type: none;
+  display: inline-block;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.address-link > a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.location-link > a {
+  color: #fff;
+}
