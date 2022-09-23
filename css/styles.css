@@ -29,7 +29,6 @@ body {
 
 .brand-logo {
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
@@ -60,13 +59,14 @@ body {
 
 .nav-menu-link > a {
   display: block;
-  font-style: normal;
   text-align: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  color: var(--text-color);
 }
 .nav-menu-link > a:visited {
   color: var(--text-color);
@@ -85,7 +85,6 @@ body {
 }
 .header-contacts-link > a {
   display: block;
-  font-style: normal;
   text-align: center;
   font-weight: 500;
   font-size: 14px;
@@ -159,8 +158,6 @@ body {
 }
 
 .section-hero > h1 {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
@@ -188,7 +185,6 @@ body {
   height: 50px;
   margin-top: 30px;
 
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
@@ -234,7 +230,6 @@ body {
 }
 
 .features-item > h3 {
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -243,7 +238,6 @@ body {
 }
 
 .features-item > p {
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -265,7 +259,6 @@ body {
 }
 
 .section-about > h2 {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -306,7 +299,6 @@ body {
 }
 
 .section-team > h2 {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -344,7 +336,6 @@ body {
 }
 
 .team-card > h3 {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
@@ -355,7 +346,6 @@ body {
 }
 
 .team-card > p {
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -397,7 +387,6 @@ body {
 }
 
 .portfolio-filter-item > button {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
